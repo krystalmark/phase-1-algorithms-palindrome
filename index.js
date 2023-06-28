@@ -1,4 +1,7 @@
 function isPalindrome(word) {
+
+   word = word.replace(/ /g, "").toLowerCase();
+  return word === word.split("").reverse().join("");
   // Write your algorithm here
 }
 
@@ -7,7 +10,7 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
+  This function removes any spaces from the input string and converts it to lowercase for case-insensitive comparison. Then, it checks if the reversed string is equal to the original string, returning true if they are the same (a palindrome) and false otherwise.
 */
 
 // You can run `node index.js` to view these console logs
